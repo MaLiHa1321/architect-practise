@@ -1,0 +1,289 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Work+Sans:wght@300;400&family=Ysabeau+Infant:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+
+}
+body{
+    overflow-x: hidden !important;
+}
+header{
+    padding: 50px 280px;
+    background: rgba(255, 144, 14, 0.10); 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #424242 ;
+}
+.logo-title{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.banner-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 3rem;
+    padding: 10px;
+    margin: 10px;
+}
+.banner-para{
+    color: #424242;
+    padding: 10px;
+    margin: 10px;
+}
+.banner-img img{
+     width: 100%;
+}
+.btn-primary{
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.left {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.feature-title{
+    font-size: 2.8rem;
+    padding: 20px;
+    margin: 10px;
+}
+.quick{
+    color: #424242;
+}
+.our{
+    color: #131313;
+}
+.fet{
+    color: #FF900E;
+}
+.feature-para{
+    padding: 5px 20px;
+    margin: 10px;
+    color: #424242;
+}
+.feature{
+    border-left: 5px solid #FF900E;
+}
+.features-container{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.card{
+    padding: 20px;
+    margin: 30px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-right img{
+    height: 80%;
+}
+.ten-years{
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    width: 20%;
+    padding: 30px;
+    position: relative;
+    bottom: 70px;
+}
+.fact-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.fact-div{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.fact-card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 20px;
+    text-align: center;
+}
+.sponser{
+    width: 90%;
+    margin: 0 auto;
+}
+.spons-title{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.spons-para{
+    text-align: center;
+    margin: 20px;
+    font-size: 1rem;
+    
+}
+.spons-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 20px;
+}
+footer{
+    margin-top: 10%;
+}
+.footer-container{
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+   background: #FFF4E7;
+}
+.footer-text{
+    text-align: center;
+    padding: 30px;
+}
+
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-container{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .left{
+        grid-template-columns: 1fr;
+    }
+    .features-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .feature-right img{
+        width: 100%;
+    }
+    .fact-container{
+        width: 100%;
+        
+    }
+    .fact-div{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .spons-container{
+       flex-direction: column;
+       gap: 20px;
+       align-items: center;
+    }
+    .footer-container{
+        width: 100%;
+       
+    }
+    
+}
+
+/* medium screen */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-container{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .left{
+        grid-template-columns: repeat(2,fr);
+    }
+    .features-container{
+       
+        flex-direction: column;
+        width: 100%;
+    }
+    .feature-right img{
+        width: 100%;
+    }
+    .ten-years{
+       
+        width: 18%;
+        padding: 10px;
+        position: relative;
+        bottom: 50px;
+    }
+    .fact-container{
+        width: 100%;
+        
+    }
+    .fact-div{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .spons-container{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+     }
+     .footer-container{
+        width: 100%;
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
